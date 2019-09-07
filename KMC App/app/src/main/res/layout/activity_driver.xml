@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.mfe.madeel.devicetracker.DriverActivity">
+
+
+    <Button
+        android:id="@+id/btnlogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="257dp"
+        android:layout_y="252dp"
+        android:background="#ff0000"
+        android:onClick="logout"
+        android:text="Log Out"
+        android:textColor="#fff"
+        tools:layout_editor_absoluteX="307dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/txtheading"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_x="69dp"
+        android:layout_y="262dp"
+        android:text="Logged In as Driver"
+        android:textColor="#000"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="30dp" />
+
+    <TextView
+        android:id="@+id/txtHeadingUsername"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_x="82dp"
+        android:layout_y="292dp"
+        android:textColor="#000"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="48dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="351dp"
+        android:text="All Requests:"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="83dp" />
+
+    <ListView
+        android:id="@+id/my_listview"
+        android:layout_width="match_parent"
+        android:layout_height="264dp"
+        android:layout_x="0dp"
+        android:layout_y="402dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp"
+        android:gravity="center|center_horizontal|fill_horizontal"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="111dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="186dp"
+        android:layout_x="0dp"
+        android:layout_y="0dp"
+        app:srcCompat="@drawable/spl1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+</AbsoluteLayout>

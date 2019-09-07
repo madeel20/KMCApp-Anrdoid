@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.mfe.madeel.devicetracker.ViewReqDriverActivity">
+
+    <fragment
+        android:id="@+id/g_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="384dp"
+        android:layout_x="0dp"
+        android:layout_y="130dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/btnlogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="272dp"
+        android:layout_y="5dp"
+        android:background="#ff0000"
+        android:onClick="logout"
+        android:text="Log Out"
+        android:textColor="#fff"
+        tools:layout_editor_absoluteX="307dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/txtheading"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_x="73dp"
+        android:layout_y="16dp"
+        android:text="Logged In as Driver"
+        android:textColor="#000"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="30dp" />
+
+    <TextView
+        android:id="@+id/txtHeadingUsername"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_x="85dp"
+        android:layout_y="50dp"
+        android:textColor="#000"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="48dp" />
+
+    <Button
+        android:id="@+id/regbtn2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_x="0dp"
+        android:layout_y="529dp"
+        android:background="#76c07e"
+        android:onClick="btnBookATruckClick"
+        android:text="Accept"
+        android:textColor="#ffff" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="73dp"
+        android:layout_height="60dp"
+        android:layout_x="0dp"
+        android:layout_y="0dp"
+        app:srcCompat="@drawable/smalllogo"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/txtrequsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="98dp"
+        android:text="Viewing Request from: "
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="78dp" />
+</AbsoluteLayout>
